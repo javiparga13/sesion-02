@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+:root {
+    --figura: #FFE000;
+    --fondo: linear-gradient(to right, #a80077, #66ff00);
+    /* ¿Qué valor de contrast-ratio está utilizando? Revise en https://contrast-ratio.com/ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: color ease 0.5s;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--figura);
+    background: var(--fondo);
+    line-height: 1.25;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3vw;
+}
+
+a:hover {
+    color: white;
+}
+
+header, main, footer {
+    width: 86vw;
+    margin: 0;
+    padding: 5vh 7vw;
+    
+}
+
+
+header h1 {
+    font-size: 3.5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+p{
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 2rem;
+}
+#mono{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 90px;
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
